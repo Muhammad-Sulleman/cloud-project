@@ -27,7 +27,7 @@ function Sidebar(props) {
     }
 
     getStorageUsed();
-  }, [props.usedStorage]); 
+  }, [props.usedStorage],[user._id]); 
 
   const handleLogout = () => {
     logout();
